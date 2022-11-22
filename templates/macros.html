@@ -34,7 +34,7 @@
       {%- if page.summary -%}
       {{ page.summary | markdown |safe }}
       {% else -%}
-      {{ page.content | striptags | truncate(length=280) | markdown |safe }}
+      {{ page.content | striptags | truncate(length=100) | markdown |safe }}
       {%- endif -%}
     </p>
   </div>
